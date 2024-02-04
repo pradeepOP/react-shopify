@@ -22,10 +22,12 @@ function Cart() {
       ) : (
         <div className="pt-4 mt-20 space-y-4 font-mono">
           <div className="flex justify-around mb-8 ">
-            <h1 className="text-2xl font-semibold tracking-wider text-gray-700">
+            <h1 className="text-xl font-semibold tracking-wider text-gray-700 md:text-2xl">
               Your Cart
             </h1>
-            <p className="text-2xl text-gray-800">Cart Total: ${cartTotal()}</p>
+            <p className="text-xl text-gray-800 md:text-2xl">
+              Cart Total: ${cartTotal()}
+            </p>
           </div>
           {cart.map((item) => (
             <CartItem key={item.id} item={item} />

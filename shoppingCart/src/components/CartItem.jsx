@@ -20,15 +20,17 @@ function CartItem({ item }) {
 
   return (
     <div className="w-4/5 px-6 py-4 mx-auto font-mono bg-gray-100 rounded-sm shadow-md md:w-2/3 ">
-      <div className="flex items-center justify-between">
-        <p className="text-xl tracking-wider text-gray-700 ">{item.title}</p>
-        <p className="text-xl tracking-wider text-gray-700">
-          Price: ${item.price}
+      <div className="flex justify-between">
+        <p className="text-base text-gray-700 md:tracking-wider md:text-xl ">
+          {item.title}
+        </p>
+        <p className="text-base text-gray-700 md:tracking-wider md:text-xl">
+          Price:${item.price}
         </p>
       </div>
       <div className="flex items-center justify-between mt-3">
         <img src={item.imageURL} alt="/" className="object-cover w-28 h-28" />
-        <div className="flex gap-5 text-xl">
+        <div className="flex gap-2 text-xl md:gap-5">
           <button
             onClick={handleDecrease}
             className="px-3 py-1 bg-gray-200 rounded-sm">

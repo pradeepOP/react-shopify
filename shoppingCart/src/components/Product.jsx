@@ -13,7 +13,7 @@ function Product({ item }) {
         <img className="object-cover w-72 h-72 " src={item.imageURL} alt="/" />
       </div>
       {/* product details */}
-      <div className="p-6 mt-6 space-y-4 text-gray-800">
+      <div className="p-6 mt-6 space-y-3 text-gray-800 md:space-y-4">
         <h2 className="text-xl ">{item.title}</h2>
         <p className="text-lg ">Price: ${item.price}</p>
         <p className="text-lg">Category: {item.category}</p>
